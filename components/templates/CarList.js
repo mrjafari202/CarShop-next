@@ -15,9 +15,9 @@ const CarList = ({ data }) => {
                 <p>back</p>
             </div>
             <div className={styles.cards}>
-{
-    data.map((item) => (<Card key={item.id} {...item } /> ))
-}
+                {
+                    data.map((item) => (<Card key={item.id} {...item} />))
+                }
             </div>
         </div>
     )

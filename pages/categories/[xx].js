@@ -4,8 +4,9 @@ import CarList from "@/components/templates/CarList"
 
 const CardCategori = () => {
     const router = useRouter()
-    const {cardCate} = router.query;
-    const categori = carsData.filter((car) => car.category === cardCate)
+    const {xx} = router.query;
+    console.log(router)
+    const categori = carsData.filter((car) => car.category === xx)
    
   return (
     <div><CarList data={categori}/></div>
